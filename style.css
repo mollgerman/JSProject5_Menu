@@ -16,11 +16,6 @@ nav {
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
-
-.nav-center {
-    display: flex;
-    justify-content: space-between;
-}
 .nav-header {
     display: flex;
     padding: 0.5rem;
@@ -31,20 +26,32 @@ nav {
     font-size: 3rem;
     border: none;
     padding: 2px;
-    display: none;
     background-color: white;
 }
-
-.nav-links{
-    height: auto;
-    box-sizing: border-box;
-    
+.nav-links a {
+    display: block;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
 }
-
+.social-media {
+    display: none;
+}
+.nav-links{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+.show-links {
+    height: auto;
+}
 ul {
     list-style-type: none;
-    display: flex;
+    display: block;
     align-items: center;
+}
+li{
+    padding: 0.5rem;
 }
 a {
     text-decoration: none;
@@ -52,43 +59,49 @@ a {
     text-decoration: underline 0.13em rgba(255, 255, 255, 0);
     transition: text-decoration-color 300ms;
 }
-
 a:hover {
     text-decoration-color: black;
 }
 
-.nav-links a {
-    display: block;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-}
-.social-media {
-    height: auto;
-}
-.social-media a {
-    display: block;
-    font-size: 1rem;
-    padding: 0.3rem 0.2rem;
-    
-}
-@media screen and (max-width: 800px) {
-    .nav-links {
+@media screen and (min-width: 800px) {
+    .nav-center {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .nav-header {
+        padding: 0;
+      }
+      .nav-toggle {
         display: none;
     }
-    ul {
+    .nav-links {
+        display: flex;
+        height: auto;
+    }
+    .nav-links a {
+        padding: 0;
+        margin: 0 0.5rem;
+      }
+    ul{
         display: block;
     }
     li {
         padding: 0.3rem;
     }
     .social-media {
-        display: none;
-    }
-    .nav-toggle {
         display: flex;
-
     }
-    .nav-center{
-        display: contents;
+    
+    a {
+        text-decoration: none;
+        color:black;
+        text-decoration: underline 0.13em rgba(255, 255, 255, 0);
+        transition: text-decoration-color 300ms;
+    }
+    a:hover {
+        text-decoration-color: black;
     }
 }
