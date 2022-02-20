@@ -14,14 +14,24 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     
 }
 .container {
-    flex-flow: row;
+    display: flex;
+    flex-direction: column;
     border: 1px solid;
     border-radius: 1rem;
-    width: 20rem;
+    width: 40vh;
     margin: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.starters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 110vh;
 }
 nav {
     background: var(--clr-white);
