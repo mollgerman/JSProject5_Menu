@@ -5,9 +5,12 @@ toggle.addEventListener("click", function() {
     if (toggleState == "closed") {
         toggleState = "opened";
         links.classList.add("show-links");
+        toggle.classList.add("transToggle");
     } 
     else {
         toggleState = "closed";
-        links.classList.remove("show-links")
+        links.classList.remove("show-links");
+        toggle.classList.remove("transToggle");
+        
     }
 })

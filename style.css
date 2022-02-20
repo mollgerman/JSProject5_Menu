@@ -27,6 +27,11 @@ nav {
     border: none;
     padding: 2px;
     background-color: white;
+    transition: all 0.3s linear;
+    
+}
+.transToggle {
+    transform: rotate(45deg);
 }
 .nav-links a {
     display: block;
@@ -43,15 +48,17 @@ nav {
     transition: all 0.3s linear;
 }
 .show-links {
-    height: auto;
+    height: 15rem;
 }
 ul {
     list-style-type: none;
     display: block;
     align-items: center;
+    transition: all 0.3s linear;
 }
 li{
     padding: 0.5rem;
+    transition: all 0.3s linear;
 }
 a {
     text-decoration: none;
