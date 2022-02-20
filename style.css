@@ -29,7 +29,7 @@ nav {
     background-color: white;
     transition: all 0.3s linear;
     
-}
+} 
 .transToggle {
     transform: rotate(45deg);
 }

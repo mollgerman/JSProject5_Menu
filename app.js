@@ -13,4 +13,4 @@ toggle.addEventListener("click", function() {
         toggle.classList.remove("transToggle");
         
     }
-}) 
+})  
