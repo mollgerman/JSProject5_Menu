@@ -181,6 +181,8 @@ a:hover {
     }
     .shareOptions {
         display: flex;
+        visibility: visible;
+        height: 2rem;
     }
     
     a {
