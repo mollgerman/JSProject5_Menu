@@ -35,8 +35,8 @@ quitModal.addEventListener("click", function(){
 shareButton.addEventListener('click', event => {
     if (navigator.share) { 
      navigator.share({
-        title: 'WebShare API Demo',
-        url: 'https://codepen.io/ayoisaiah/pen/YbNazJ'
+        title: 'Restaurant Menu',
+        url: 'https://mollgerman.github.io/JSProject5_Menu/'
       }).then(() => {
         console.log('Thanks for sharing!');
       })

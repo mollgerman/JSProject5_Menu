@@ -140,6 +140,7 @@ a:hover {
     justify-content: center;
     border-radius: 1rem;
 }
+
 .quit-modal{
     position: absolute;
     top: 1rem;
@@ -147,6 +148,19 @@ a:hover {
     font-size: 2rem;
     border: none;
     background-color: transparent;
+}
+@media screen and (max-width: 500px){
+    
+    .modal {
+        width: 95%;
+        background-color: white;
+        height: 50%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem;
+        margin:0.5rem;
+    }
 }
 @media screen and (min-width: 800px) {
     .nav-center {
@@ -183,6 +197,7 @@ a:hover {
         display: flex;
         visibility: visible;
         height: 2rem;
+        padding: 0px 0px 0px 0px;
     }
     
     a {
@@ -194,4 +209,38 @@ a:hover {
     a:hover {
         text-decoration-color: black;
     }
+
+.modal-overview {
+    position: fixed;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    background-color: rgba(128, 128, 128, 0.507);
+}
+.modal-show{
+    visibility: visible;
+}
+
+.modal {
+    width: 60vh;
+    background-color: white;
+    height: 50vh;
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+.quit-modal{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+}
 }
