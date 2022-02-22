@@ -46,13 +46,6 @@ window.addEventListener("DOMContentLoaded", () => {
     starters.innerHTML = itemMenu;
 })
 
-/*function newItem (item) {
-    let 
-    starters.innerHTML = 
-    `<div class="container">
-        <h1>${menuItems[item].name}</h1>
-        <img src="" alt="">
-        <p></p>
-        <h3></h3>
-    </div>`
-}*/
+const btns = document.querySelectorAll(".btns");
+
+btns.addEventListener("click", )
