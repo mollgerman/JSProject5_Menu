@@ -5,31 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav> 
+    <nav id="nav"> 
         <div class="nav-center">
             <div class="nav-header">
                 <h2>Restaurant</h2>
                 <button class="nav-toggle" id="toggle">+</button>
             </div>
+            <!-- DISPLAY NAVBAR ITEMS // MOSTRAR NAVBAR ITEMS -->
             <ul class="nav-links filters" id="links">
-               <!-- <li>
-                    <a class="btns" id="all-btn">All</a>
-                </li>
-                <li>
-                    <a class="btns" id="starters-btn">Starters</a>
-                </li>
-                <li>
-                    <a class="btns" id="burgers-btn">Burgers</a>
-                </li>
-                <li>
-                    <a class="btns" id="pizzas-btn">Pizzas</a>
-                </li>
-                <li>
-                    <a class="btns" id="drinks-btn">Drinks</a>
-                </li> -->
+               <!-- FILLED WITH JS // RELLENADO CON JS -->
             </ul>
             <ul class="shareOptions">
                 <li>
@@ -45,10 +34,10 @@
         </div>
     </nav>
     <main>
+        <!-- DISPLAY MENU ITEMS // MOSTRAR ITEMS DEL MENU -->
         <div class="menu">
-            
+               <!-- FILLED WITH JS // RELLENADO CON JS-->
         </div>
-        
         <div id="qrmodal" class="modal-overview">
             <div class="modal">
                 <button class="quit-modal">X</button>
@@ -57,7 +46,14 @@
             </div>
         </div>
     </main>
-    <script src="app.js"></script>
+    <footer>
+        <p>Restaurant</p>
+        <div>
+            <p>601 N 34th St,  Seattle,  WA 98103</p>
+        </div>
+    </footer>
     <script src="menuItems.js"></script>
+    <script src="app.js"></script>
+    
 </body>
 </html>

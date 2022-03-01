@@ -6,9 +6,12 @@
   box-sizing: border-box;
 }
 
+
 body{
-    font-family: Poppins, sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
+
+
 main{
     display: flex;
     flex-direction: row;
@@ -17,40 +20,74 @@ main{
     align-items: center;
     
 }
+
+
 .container {
     display: flex;
     flex-direction: column;
-    border: 1px solid;
+    border: 3px solid rgb(72, 72, 73);
     border-radius: 1rem;
     width: 40vh;
     margin: 30px;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+    box-shadow: 5px 5px 2px 1px rgb(24, 24, 24);
 }
+
+
 .menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     max-width: 160vh;
+    transition: all 0.3s linear;
 }
-img {
+
+
+.type {
+    font-size: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin:1rem;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(0, 0, 0);
+}
+
+
+.imgs {
     width: 200px;
     height: 200px;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    margin:1rem;
+    border: 2px solid rgb(34, 34, 34);
+    
 }
+
+
 nav {
-    background: var(--clr-white);
+    background-color: white;
     box-shadow: var(--light-shadow);
     border-bottom: 2px solid;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+    position: sticky;
+    left: 0;      
+    top: 0;      
+    width: 100%;  
 }
+
+
 .nav-header {
     display: flex;
     padding: 0.5rem;
     align-items: center;
     justify-content: space-between;
 }
+
+
 .nav-toggle {
     font-size: 3rem;
     border: none;
@@ -59,63 +96,95 @@ nav {
     transition: all 0.3s linear;
     
 } 
+
+
 .transToggle {
     transform: rotate(45deg);
 }
+
+
 #qr {
     width: 3rem;
     height: 3rem;
 }
+
+
 #qrli {
     padding-bottom: 0px;
 }
+
+
 #share {
     width: 2rem;
     height: 2rem;
 }
+
+
 #share-a {
     text-decoration: none;
 }
+
+
 .nav-links a {
     display: block;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     transition: all 0.3s linear;
 }
+
+
 .social-media {
     display: none;
 }
+
+
 .nav-links{
+    visibility: hidden;
     height: 0;
     overflow: hidden;
-    transition: all 0.3s linear;
+    transition: all 0.5s linear;
 }
+
+
 .show-links {
-    height: auto;
+    visibility: visible;
+    overflow: visible;
+    transition: all 0.5s linear;
 }
+
+
 ul {
     list-style-type: none;
     display: block;
     align-items: center;
     transition: all 0.3s linear;
 }
+
+
 li{
     padding: 0.5rem;
     transition: all 0.2s linear;
 }
+
+
 li:hover {
     background-color: rgb(197, 197, 197);
 }
+
+
 a {
     text-decoration: none;
     color:black;
     text-decoration: underline 0.13em rgba(255, 255, 255, 0);
     transition: text-decoration-color 300ms;
 }
+
+
 a:hover {
     text-decoration-color: black;
     cursor: pointer;
 }
+
 
 .shareOptions{
     display: flex;
@@ -125,12 +194,16 @@ a:hover {
     height: 0;
     transition: all 0.3s linear;
 }
+
+
 .showShareOptions {
     visibility: visible;
     height: 3rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
+
+
 .modal-overview {
     position: fixed;
     width:100%;
@@ -142,9 +215,12 @@ a:hover {
     visibility: hidden;
     background-color: rgba(128, 128, 128, 0.507);
 }
+
+
 .modal-show{
     visibility: visible;
 }
+
 
 .modal {
     width: 60vh;
@@ -157,6 +233,7 @@ a:hover {
     border-radius: 1rem;
 }
 
+
 .quit-modal{
     position: absolute;
     top: 1rem;
@@ -165,8 +242,31 @@ a:hover {
     border: none;
     background-color: transparent;
 }
+
+
+footer {
+    background-color: black;
+    color: white;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+footer p {
+    margin: 2rem;
+    margin-right: 5rem;
+}
+
+
+footer div p {
+    margin: 0.3rem;
+}
+
+
 @media screen and (max-width: 500px){
-    
     .modal {
         width: 95%;
         background-color: white;
@@ -178,7 +278,18 @@ a:hover {
         margin:0.5rem;
     }
 }
-@media screen and (min-width: 800px) {
+
+
+@media screen and (min-width: 900px) {
+    nav {
+        position: sticky;
+        left: 0;      
+        top: 0;      
+        width: 100%;  
+        background-color: white;
+    }
+
+
     .nav-center {
         margin: 0 auto;
         display: flex;
@@ -186,29 +297,46 @@ a:hover {
         justify-content: space-between;
         padding: 1rem;
     }
+
+
     .nav-header {
         padding: 0;
-      }
-      .nav-toggle {
+    }
+
+
+    .nav-toggle {
         display: none;
     }
+
+
     .nav-links {
         display: flex;
         height: auto;
+        visibility: visible;
     }
+
+
     .nav-links a {
         padding: 0;
         margin: 0 0.5rem;
-      }
-    ul{
+    }
+
+
+    ul {
         display: block;
     }
+
+
     li {
         padding: 0.3rem;
     }
+
+
     li:hover {
         background-color: transparent;
     }
+
+
     .shareOptions {
         display: flex;
         visibility: visible;
@@ -216,47 +344,56 @@ a:hover {
         padding: 0px 0px 0px 0px;
     }
     
+
     a {
         text-decoration: none;
         color:black;
         text-decoration: underline 0.13em rgba(255, 255, 255, 0);
         transition: text-decoration-color 300ms;
     }
+
+
     a:hover {
         text-decoration-color: black;
     }
 
-.modal-overview {
-    position: fixed;
-    width:100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: grid;
-    place-items: center;
-    visibility: hidden;
-    background-color: rgba(128, 128, 128, 0.507);
-}
-.modal-show{
-    visibility: visible;
-}
 
-.modal {
-    width: 60vh;
-    background-color: white;
-    height: 50vh;
-    display: grid;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1rem;
-}
-.quit-modal{
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 2rem;
-    border: none;
-    background-color: transparent;
-}
+    .modal-overview {
+        position: fixed;
+        width:100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: grid;
+        place-items: center;
+        visibility: hidden;
+        background-color: rgba(128, 128, 128, 0.507);
+    }
+
+
+    .modal-show{
+        visibility: visible;
+    }
+
+
+    .modal {
+        width: 60vh;
+        background-color: white;
+        height: 50vh;
+        display: grid;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem;
+    }
+
+
+    .quit-modal{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        border: none;
+        background-color: transparent;
+    }
 }
